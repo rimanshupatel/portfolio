@@ -3,6 +3,8 @@ import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 import { CiLocationArrow1 } from "react-icons/ci";
 import MagicButton from "./ui/MagicButton";
+import { Typewriter } from "react-simple-typewriter";
+import TypeWriterEffect from "./ui/TypeWriterEffect";
 const Hero = () => {
   return (
     <div className="pb-20 pt-36">
@@ -37,6 +39,9 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl text-[#e5e7eb]"
             words="hello, I'm Rimanshu Patel"
           />
+          <h1>
+            <TypeWriterEffect title="And I'm" write={[]} />
+          </h1>
           <a href="#">
             <MagicButton
               title="Hire me"
