@@ -1,7 +1,7 @@
 import React from "react";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
-import { LuSendHorizontal } from "react-icons/lu";
+import { CiLocationArrow1 } from "react-icons/ci";
 import MagicButton from "./ui/MagicButton";
 const Hero = () => {
   return (
@@ -37,9 +37,14 @@ const Hero = () => {
             className="text-center text-[40px] md:text-5xl lg:text-6xl text-[#e5e7eb]"
             words="hello, I'm Rimanshu Patel"
           />
-          <div>
-            <MagicButton title="Hire me" icon={<LuSendHorizontal />} />
-          </div>
+          <a href="#">
+            <MagicButton
+              title="Hire me"
+              position="right"
+              icon={<CiLocationArrow1 />}
+              OtherClasses="capitalize"
+            />
+          </a>
         </div>
       </div>
     </div>
